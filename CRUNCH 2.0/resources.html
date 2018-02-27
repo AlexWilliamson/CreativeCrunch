@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Creative Crunch | Resources</title>
+	<link rel="stylesheet" href="css/solar1.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link re="stylesheet" href="css/bootstrap-grid.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/portfolioGrid/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/portfolioGrid/component.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu/menu_topexpand.css" />
+
+
+<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->
+  </head>
+
+  <body id="resources">
+
+  	<header>
+  		<div class="menu-wrap">
+  			<nav class="menu">
+          <div class="icon-list">
+            <a href="index.html"><i class="fa fa-fw fa-star-o"></i><span>Home</span></a>
+            <a href="portfolio.html"><i class="fa fa-fw fa-bell-o"></i><span>Portfolio</span></a>
+            <a href="comms.html"><i class="fa fa-fw fa-envelope-o"></i><span>Comms</span></a>
+            <a href="crumb.html"><i class="fa fa-fw fa-comment-o"></i><span>Design Crumb</span></a>
+            <a href="resources.html"><i class="fa fa-fw fa-bar-chart-o"></i><span>Resources</span></a>
+            <a href="team.html"><i class="fa fa-fw fa-newspaper-o"></i><span>Team</span></a>
+          </div>
+        </nav>
+  		</div>
+  		<button class="menu-button" id="open-button"></button>
+
+  		<div class="container">
+  			<div class="row">
+  				<div class="logoContainer">
+  					<a href="index.html"><img src="images/Creative-Crunch--Logos-extend.gif" alt="Creative Crunch Logo" class="logo"></a>
+  				</div>
+  			</div>
+  		</div>
+
+  		<div class='fade-overlay' style='color:#0097CD;width:100%;height:1350px;opacity:1;transition: 1.5s all ease-in;'></div>
+
+
+  		<div class="resourceTop"> 
+  			<div class="container">
+  				<div class="row">
+  					<div class="title">
+  						<div class="col-md-12">
+  							<div class="cre-animate" data-animation="slide-up-from-bottom" data-speed="1000" data-delay="700" data-offset="70%" data-easing="easeInOutBack">
+  								<h1>Resources</h1>
+  							</div>
+  						</div>
+  						<div class="col-md-12">
+  							<div class="cre-animate" data-animation="slide-up-from-bottom" data-speed="1000" data-delay="900" data-offset="70%" data-easing="easeInOutBack">
+  								<h5>Stock up on fuel for your imagination... rocket</h5> 
+  							</div>
+  						</div>  
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</header>
+
+
+  	<section class="grid-wrap">
+  		<ul class="grid swipe-down" id="grid">
+  			<li><a href="pdfs/SocialInteraction.pdf" target="_blank"><img src="images/resources/ScoialInteraction-thumb.png" alt="Social Interaction"><h3>Social Interaction</h3></a></li>
+  			<li><a href="pdfs/EasterEggs.pdf" target="_blank"><img src="images/resources/EasterEggs-thumb.png" alt="Easter Eggs"><h3>Easter Eggs</h3></a></li>
+  			<li><a href="pdfs/RewardGallery.pdf" target="_blank"><img src="images/resources/RewardGallery-thumb.png" alt="Reward Gallery"><h3>Reward Gallery</h3></a></li>
+  			<li><a href="pdfs/RewardAdvert.pdf" target="_blank"><img src="images/resources/RewardAdvert-thumb.png" alt="Reward Advert"><h3>Reward Advert</h3></a></li>
+  			<li><a href="pdfs/ActivityBadges.pdf" target="_blank"><img src="images/resources/ActivityBadges-thumb.png" alt="Activity Badges"><h3>Activity Badges</h3></a></li>
+  			<li><a href="pdfs/TalentShow.pdf" target="_blank"><img src="images/resources/TalentShow-thumb.png" alt="Social Interaction"><h3>Social Interaction</h3></a></li>
+  			<li><a href="pdfs/SponsoredVideos.pdf" target="_blank"><img src="images/resources/SponsoredVideos-thumb.png" alt="Sponsored Videos"><h3>Sponsored Videos</h3></a></li>
+  			<li><a href="pdfs/SpontaneousWinners.pdf" target="_blank"><img src="images/resources/SpontaneousWinners-Thumb.png" alt="Spontaneous Winners"><h3>Spontaneous Winners</h3></a></li>
+  			<li><a href="pdfs/Risk.pdf" target="_blank"><img src="images/resources/Risk-thumb.png" alt="Risk"><h3>Risk</h3></a></li>
+            <li><a href="pdfs/RafflePrize.pdf" target="_blank"><img src="images/resources/RafflePrize-Thumb.png" alt="Raffle Prizes"><h3>Raffle Prizes</h3></a></li>
+            <li><a href="pdfs/BrandGuidelines2017_final.pdf" target="_blank"><img src="images/resources/Brand-thumb.png" alt="Brand Guideline"><h3>Brand Guidelines</h3></a></li>
+            <li><a href="fonts/Fonts.zip" target="_blank"><img src="images/resources/CR-fonts.png" alt="CR Brand fonts"><h3>CR Brand Fonts</h3></a></li>
+             
+  		</ul>
+  	</section>
+
+
+
+
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  	<script src="js/menu/classie.js"></script>
+  	<script src="js/menu/main.js"></script>
+  	<script>
+  		$('.count').each(function () {
+  			$(this).prop('Counter',0).animate({
+  				Counter: $(this).text()
+  			}, {
+  				delay: 1000
+  				duration: 1000,
+  				easing: 'swing',
+  				step: function (now) {
+  					$(this).text(Math.ceil(now));
+  				}
+  			});
+  		});
+  	</script>
+  	<script src="js/modernizr.custom.js"></script>
+  	<script src="https://use.typekit.net/xxf5puc.js"></script>
+  	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  	<script src="js/portfolioGrid/masonry.pkgd.min.js"></script>
+  	<script src="js/portfolioGrid/imagesloaded.pkgd.min.js"></script>
+  	<script src="js/portfolioGrid/classie.js"></script>
+  	<script src="js/portfolioGrid/colorfinder-1.1.js"></script>
+  	<script src="js/portfolioGrid/gridScrollFx.js"></script>
+  	<script>
+  		new GridScrollFx( document.getElementById( 'grid' ), {
+  			viewportFactor : 0.4
+  		} );
+  	</script>
+  	<script type="text/javascript" src="js/overlayfade.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+
+  </body>
+  </html>

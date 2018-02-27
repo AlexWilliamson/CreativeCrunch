@@ -1,0 +1,235 @@
+body {
+  background-color:#180240;
+  overflow:hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-container {
+  width:100%;
+  height:100%;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+
+.background-rotation {
+
+    position: absolute;
+    right: -244px;
+    top: -124px;
+    animation: spin 200s infinite;
+    animation-timing-function: linear;
+
+}
+
+.leftspin {
+    animation: leftspin 1.5s infinite linear;
+    animation-timing-function: ease-in-out;
+}
+
+.rightspin {
+
+}
+
+.overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:5;
+    transition: 1.5s all;
+    background: linear-gradient(to right, rgba(23,6,6,0.3) 0%, rgba(23,6,6,0) 20%, rgba(23,6,6,0) 40%, rgba(23,6,6,0) 80%, rgba(23,6,6,0.3) 100%);
+}
+
+#left-button {
+  position:fixed;
+  top:45%;
+  left:-40px;
+  height:200px;
+  width:130px;
+  background-image:url(../images/button-01.png);
+  background-size:cover;
+  z-index: 20;
+  text-align: center;
+  padding: 56px;
+  font-size: 56px;
+  cursor:pointer;
+  transition: 1s all;
+}
+
+#right-button {
+  position:fixed;
+  top:45%;
+  right:-40px;
+  height:200px;
+  width:130px;
+  background-image:url(../images/button-02.png);
+  background-size:cover;
+  z-index: 20;
+  text-align: center;
+  padding: 56px;
+  padding-left: 42px;
+  font-size: 56px;
+  cursor:pointer;
+  transition: 1s all;
+}
+
+#left-button:hover {
+background-image:url(../images/buttonani1.gif);
+
+
+}
+
+#right-button:hover {
+background-image:url(../images/buttonani2.gif);
+
+
+}
+
+.planet {
+  display:none;
+  position: absolute;
+  top: 333px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width:40%;
+  z-index:6;
+  text-align:center;
+  margin-bottom:20%;
+}
+
+.planet h1 {
+  font-size: 30px;
+  font-family:'museo-sans', sans-serif;
+  color: white;
+  text-align:center;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.planet p {
+  font-size: 16px;
+  font-family:'museo-sans', sans-serif;
+  color: white;
+  text-align:center;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.ghst-btn {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  border: 2px solid #C3E9F6;
+  text-align: center;
+  height: 40px;
+  padding: 10px 30px;
+  position: relative;
+  top: 30px;
+}
+
+a.ghst-btn {
+  text-decoration: none;
+  color: #3A82B4;
+  font-family:'museo-sans', sans-serif;
+  text-transform: uppercase;
+}
+
+a.ghst-btn:hover{
+  transition: background-color 0.5s ease;
+  background-color: #C3E9F6;
+  border: 2px solid #C3E9F6;
+  color:#180240;
+}
+
+#orbit {
+  margin:0 auto;
+  width:300vw;
+  height:290vw;
+  position:absolute;
+  top:400px;
+  right: -100%;
+  text-align:center;
+  background-image:url(../images/planetsai2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  /*-webkit-animation: spin-right 25s linear infinite;
+  animation: spin-right 25s infinite;
+  transform:rotate(72deg);*/
+}
+
+
+#orbit{  -webkit-transition: all 2s ease-in-out;
+          transition: all 2s ease-in-out; }
+
+
+@media all and (max-width: 1690px) { 
+.background-rotation { position: absolute; right: -469px; top: -416px; animation: spin 200s infinite; animation-timing-function: linear; } 
+.planet { max-width:46%; } 
+.planet h1 { font-size:30px; } 
+.planet p { font-size:16px; } 
+}
+
+@media all and (max-width: 1280px) {
+.planet { max-width:50%;top:275px } 
+}
+
+@media all and (max-width: 980px) { 
+.planet { max-width:80%; top:250px; }
+.planet p { font-size: 22px; }
+ }
+
+ @media all and (max-width: 736px) { 
+.planet { max-width:50%; }
+ }
+ 
+ @media all and (max-width: 480px) { 
+.planet { max-width:50%; }
+.planet p { font-size: 16pt; }
+}
+
+
+.spinEffect {
+  -webkit-animation: spin 2s 1 linear;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(359deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(359deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(359deg);}
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/* CSS Document */
+body { padding-top:0!important; overflow-x:visible!important; margin:0;}
+body, .p, a {font-family: "museo-sans"; font-weight:100!important; color:#222;}
+h1, h2, h3, h4, h5, h6 {font-family: "museo-sans"; text-transform:uppercase;}
+h1 {font-size:42px; color:#fff!important; margin:0 0 30px 0; letter-spacing:1rem; }
+h2 {font-size:28px; color:#fff!important; margin:0 0 30px 0; letter-spacing:0.6rem;}
+h3 {font-size:22px; color:#f6b221; margin:0 0 30px 0; letter-spacing:0.4rem; }
+h4 {font-size:18px; color:#222; margin:0 0 20px 0; letter-spacing:0.2rem;}
+h5 {font-size:16px; font-weight:700; color:#222; margin:0 0 20px 0; letter-spacing:0.2rem;}
+p {font-size:16px;}
+.textCenter {text-align:center;}
+li {margin-left:0!important;}
+
+.purple {color:#b44a9c!important;}
+
+header {width:100%; height:100vh; margin:0 0 50px 0; position:relative; }
+.logoContainer {width:10%; height:10%; margin:0 auto; }
+.logo { width:7%; position: absolute; margin:20px auto; z-index:50; display:block;}
+
+#home {width:100%; height:100vh; margin:0; position:relative; background-size:cover; background-repeat:no-repeat; background-image:url('../images/home-background.jpg');}
+#comms {width:100%; height:100vh; margin:0; position:relative; background-color:#D1D3D4;}
+#team {width:100%; height:100vh; background:#180340!important;}
+#portfolio {width:100%; height:100%; background:#BDD247!important;}
+#resources {width:100%; height:100%; background-image:url('../images/sky-background.jpg') no-repeat; background-size:cover; background:#f6b221!important;}
+#crumb {width:100%; height:100%; background:#b44a9c!important;}
+
+#crumb p {color:#fff;}
+
+.backButton {width:100%; display:block; height:80px; background:red; z-index:100; position:relative;}
+.backText {font-family: "museo-sans"; color:#fff; font-weight:700; text-transform:uppercase; margin:20px 0 0 0;}
+.backButton img { display:block; float:left; width:70px; height:auto;}
+.backText {display:none; margin: 20px 0 0 80px; color:#fff;}
+.backButton:hover .backText {display:block;}
+
+.mainTitle {position:absolute; top:70%; right:5%;}
+
+.mainTitle h1 {font-size: 32px; color:#f9f9f9; opacity:0.7; margin:0 0 20px 0;}
+.mainTitle h2 {font-size: 18px; color:#f9f9f9; opacity:0.4; letter-spacing:0.3rem; font-weight:100; margin:0 0 10px 0;}
+.mainTitle h4 {font-size:16px; color:#f9f9f9; opacity:0.2; letter-spacing:0.2rem;}
+
+/****   INDEX   ***/
+
+.solarSystem {width:100%; min-height:100vh; padding:30% 10%; position:relative; }
+.sun {width:150px; height:150px; background:url(../images/planet-sun.png) no-repeat; background-size:100%; position:absolute; top:48%; left:15%;}
+.planetComms {width:150px; height:150px; background:url(../images/planet-comms.png) no-repeat; background-size:100%; position:absolute; top:48%; left:30%;}
+.planetPort {width:150px; height:150px; background:url(../images/planet-port.png) no-repeat; background-size:100%; position:absolute; top:48%; left:42%}
+.planetCrumb {width:150px; height:150px; background:url(../images/planet-crumb.png) no-repeat; background-size:100%; position:absolute; top:48%; left:52%}
+.planetResource {width:150px; height:150px; background:url(../images/planet-resource.png) no-repeat; background-size:100%; position:absolute; top:48%; left:70%}
+.planetTeam {width:150px; height:150px; background:url(../images/planet-team.png) no-repeat; background-size:100%; position:absolute; top:48%; left:88%}
+
+
+.title {width:auto; height:auto; display:block; z-index:5; margin:20% auto 0 auto;}
+.title h1, .title h5 {font-size:62px; letter-spacing:0.3rem; text-align:center; font-weight:700; }
+.title h5 {font-size:22px; color:#b44a9c;}
+.teamTitle {width:80%; margin: 5% auto;}
+
+#intro {width:100%; height:auto; position:relative; padding:50px 0; text-align:center;}
+#intro h2 { font-size:56px; font-weight:700; margin:0 0 30px 0; color:#b44a9c!important;}
+#intro h5 { margin:0 0 20px 0;}
+
+#content {width:100%; height:auto; min-height:600px; padding:60px 0; display:block; z-index:5;}
+
+.portfolioTop {width:100%; height:100vh; position:relative; background:url('../images/portfolio-background.jpg'); z-index:0; background-position: center; background-repeat: no-repeat; background-size: cover;}
+
+/****  TEAM   ***/
+.teamTop {width:100%; height:100vh; position:relative; background:url('../images/team-background2.jpg'); z-index:0;   background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+.teamBackground {width:100%; height:100vh; background:url('../images/team-main-img.png') top center; background-size:cover; background-repeat:no-repeat; z-index:10; position:absolute;}
+.teamPilot {width:700px; height:800px; background:url('../images/team-main-pilot.png'); z-index:20; background-repeat:no-repeat; position:absolute; bottom:-6px; right:0; background-size:contain}
+.crewMember {width:100%; height:auto; min-height:300px; margin:40px 0;}
+.crewMember h3 {font-size:18px; color:#fff!important; margin:0 0 10px 0; letter-spacing:0.2rem; text-transform:uppercase; font-weight:100;}
+.crewMember h3 span {display:block; font-size:28px; letter-spacing:0.6rem; font-weight:700;}
+.crewMember h4 {color:#f6b221; font-size:16px;  margin:0 0 20px 0; letter-spacing:0.3rem; text-transform:uppercase; }
+.crewMember p {color:#98aed3;}
+
+
+/****   COMMS   ***/
+
+.commsTop {width:100%; height:100vh; position:relative; background-image:url('../images/comms-background2.jpg');  z-index:0;   background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+/*.commsFront {width:100%; height:100vh; background:url('../images/comms-main-img.png') bottom  center no-repeat; background-size:cover; z-index:15; position:absolute; bottom:-100px;}*/
+.dashStat {min-height:150px; padding:20px 0;}
+.dashStat h2 {font-size:52px; font-weight:700; letter-spacing:0.2rem;}
+.dashStat h2 span {font-size:42px;}
+.dashStat h5 {font-size:16px;}
+.highlight {font-size:52px; font-weight:700; margin:0 0 30px 0;}
+#commsKnowledge {width:100%; height:auto; padding:200px 0; background:#58595B; color:#fff; margin:0;}
+#commsKnowledge h3 {font-size:52px; font-weight:700; margin:0 0 80px 0;}
+#commsKnowledge ol li {margin:30px 0;}
+.divider {width:40%; height:20px; margin:100px auto 0 auto; border-top:1px solid #aaa;}
+
+
+/****   RESOURCES   ***/
+
+.resourceTop {width:100%; height:100vh; position:relative; background:url('../images/resource-background.jpg');  z-index:0;   background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover;}
+/*.resourceBack {width:100%; height:100vh; background:url('../images/planet-portfolio-back.png') bottom  center no-repeat; background-size:cover; z-index:10; position:absolute; bottom:250px;}
+.resourceFront {width:100%; height:100vh; background:url('../images/planet-portfolio-front.png') bottom  center no-repeat; background-size:cover; z-index:15; position:absolute; bottom:-100px;}*/
+
+
+/*** DESIGN CRUMB ***/
+
+.crumbTop {width:100%; height:100vh; position:relative; background-image:url('../images/crumb-background.jpg'); z-index:0; background-attachment: fixed; background-position: center; background-size:cover; background-repeat: no-repeat}
+.crumbContent {height:100vh!important;}
+
+
+/*** TEXT HOVER EFFECT ***/
+
+.menu--tsula {
+	font-family: 'Space Mono', monospace;
+}
+
+.menu--tsula .menu__item {
+	padding-left: 0.25em;
+	vertical-align:middle;
+}
+
+.menu--tsula .menu__item-name {
+	font-size: 1em;
+	text-transform: uppercase;
+	color: #5a5bd3;
+}
+
+.menu--tsula .menu__item:hover .menu__item-name,
+.menu--tsula .menu__item:focus .menu__item-name {
+	color: #222328;
+	background: #5a5bd3;
+}
+
+.menu--tsula .menu__item::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 100%;
+	width: 0.9em;
+	height: 1em;
+	opacity: 0;
+	background: rgba(90,91,211,0.3);
+	animation: none; /* For Chrome */
+}
+
+.menu--tsula .menu__item-label {
+	margin: 0;
+	color: #999caa;
+	display:block;
+}
+
+.menu--tsula .menu__item:hover::before,
+.menu--tsula .menu__item:focus::before {
+	animation: blinkblink 0.4s cubic-bezier(0.5,0,1,1) infinite alternate;
+}
+
+.crewMember img {
+	display: block;
+	max-height:300px;
+	text-align:center;
+	margin: 0 auto;
+
+
+}
+
+@keyframes blinkblink {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
